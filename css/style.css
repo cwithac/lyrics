@@ -1,0 +1,302 @@
+/*HTML <> TAGS*/
+* {
+  margin: 0;
+  padding: 0.5em;
+  font-family: 'Cinzel', serif;
+}
+
+body {
+  background: url(../images/hamilton_background.jpeg) no-repeat center center fixed;
+  font-weight: bold;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 4em;
+  margin-top: -.55em;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  color: rgb(165,115,35);
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  width: calc(100%-1em);
+  height: 100%;
+  min-height: 550px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgba(256, 256, 256, .5);
+}
+
+h4 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+form {
+  display: inline;
+}
+
+button {
+  background-color: rgba(256, 256, 256, .5);
+  border-color: rgb(165,115,35);
+  color: black;
+  cursor: pointer;
+}
+
+/*ID AND CLASS*/
+#p1-questions, #p2-questions {
+  padding: .5em;
+  border: 4px solid rgb(165,115,35);
+  margin: 0 .5em;
+  background-color: black;
+  color: white;
+  font-weight: normal;
+  width: 40%;
+}
+
+#p1-questions {
+  text-align: left;
+}
+
+#p2-questions {
+  text-align: right;
+}
+
+#player1-score, #player2-score {
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgba(256, 256, 256, .3);
+  margin-bottom: auto;
+}
+
+#start-game, #how-to-play, #reset-game, #turns {
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgba(256, 256, 256, .5);
+}
+
+#turns {
+  min-width: 190px;
+}
+
+#start-game, #how-to-play, #reset-game {
+  cursor: pointer;
+}
+
+#score1, #score2 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: -50px;
+  margin-top: -40px;
+  padding-top: 10px;
+}
+
+#answers, #answersP2 {
+  border-top: 4px solid rgb(165,115,35);
+  font-size: .75em;
+  padding-top: 2em;
+}
+
+#answersP2 {
+  text-align: right;
+}
+
+#main-logo {
+  height: 450px;
+  position: absolute;
+  margin-top: 0;
+}
+
+#close {
+  color: rgb(165,115,35);
+  font-size: 2em;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+#howTo {
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    width: 75%;
+    margin-top: 3em;
+}
+
+#p1Name, #p2Name {
+  padding: 0;
+}
+
+.halfstar {
+  height: 50px;
+  padding-top: 0;
+  margin-bottom: -10px;
+}
+
+.titleStar {
+  height: 100px;
+  margin-top: -65px;
+}
+
+.track {
+  font-size: .5em;
+  margin-top: 0px;
+}
+
+.question {
+  font-size: 1.75em;
+}
+
+.answer {
+  font-size: 1em;
+}
+
+.answer:hover {
+  cursor: pointer;
+}
+
+.scoreNum {
+  animation-name: blackgold;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes blackgold { /*ANIMATION FOR .scoreNum*/
+  0%    {color: rgb(165,115,35)}
+  100%  {color: black}
+}
+
+.stars {
+  font-size: 2.5em;
+  display: inline;
+  padding: 0;
+  color: white;
+
+}
+
+.starsH2 {
+  font-size: 2.5em;
+  display: inline;
+  padding: 0;
+  color: black;
+}
+
+.stars:hover {
+  color: black;
+}
+
+.starsEnd {
+  font-size: 2.5em;
+  display: inline;
+  padding: 0;
+  color: black;
+  cursor: pointer;
+}
+
+.correctP1, .correctP2 {
+  color: rgb(165,115,35);
+  width: 95%;
+  background-color: black;
+  font-size: 1em;
+  padding: 0;
+}
+
+.correctP1 {
+  text-align: left;
+}
+
+.correctP2 {
+  text-align: right;
+  padding-right: 1em;
+    margin-left: 1em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 750px) {
+  body {
+    font-size: 15px;
+  }
+  header {
+    display: block;
+  }
+  nav {
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
+    align-items: center;
+}
+  #score1, #score2 {
+    font-size: 20px;
+  }
+  #player1-score, #player2-score {
+    width: 225px;
+    margin: 0 auto;
+  }
+  #start-game, #how-to-play, #reset-game, #turns {
+    margin-bottom: 1%;
+    width: 200px;
+  }
+  #titleLogo {
+    height: 75px;
+  }
+  section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #p1-questions, #p2-questions {
+    width: 90%;
+  }
+  #main-logo {
+    height: 250px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .titleStar {
+    visibility: collapse;
+  }
+  p {
+    font-size: 1em;
+    margin-top: .25em;
+  }
+  .halfstar {
+    visibility: collapse;
+  }
+}

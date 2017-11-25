@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+      <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+      <!-- jQuery -->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+      <!-- javascript -->
+        <script src="js/app.js" charset="utf-8"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lyrics</title>
+  </head>
+  <body>
+    <!-- PLAYER SCORES AND TITLE -->
+    <header>
+      <div id="player1-score">
+        <p id="p1Name">Player 1's Score</p>
+        <br>
+        <p id = "score1" class="scoreNum">0</p>
+        <img class = "halfstar" src="images/hamilton_halfstar.png"></img>
+        <br>
+        <form>
+          <input type="text" placeholder="Enter Player 1 Name" id="inputP1">
+        </form>
+          <button id="checkP1">&#10003;</button>
+      </div>
+      <div id="titleLogo">
+        <h1>LYRICS</h1>
+        <img class = "titleStar" src="images/hamilton_halfstar.png"></img>
+      </div>
+      <div id="player2-score">
+        <p id="p2Name">Player 2's Score</p>
+        <br>
+        <p id = "score2" class="scoreNum">0</p>
+        <img class = "halfstar" src="images/hamilton_halfstar.png"></img>
+        <br>
+        <form>
+          <input type="text" placeholder="Enter Player 2 Name" id="inputP2">
+        </form>
+          <button id="checkP2">&#10003;</button>
+      </div>
+    </header>
+      <!-- HEADER NAVIGATION -->
+      <nav id="nav">
+        <div id="start-game">Start Game</div>
+        <div id="how-to-play">How to Play</div>
+        <div id="reset-game">Reset Game</div>
+        <div id="turns">Total Rounds: 0 / 6 </div>
+      </nav>
+      <div id="levels">
+        <h2 class="starsH2">Level: </h2>
+        <h2 id="star1" class="stars">&#9733;</h2>
+        <h2 id="star2" class="stars">&#9733;</h2>
+        <h2 id="star3" class="stars">&#9733;</h2>
+        <h2 id="star4" class="stars">&#9733;</h2>
+        <h2 id="star5" class="stars">&#9733;</h2>
+      </div>
+
+      <!-- LEVELS AND QUESTIONS -->
+      <main>
+
+        <section id="container">
+          <img id="main-logo" src = "images/hamilton_logo.png"></img>
+          <div id="p1-questions" class="hidden"><br></div>
+          <div id="p2-questions" class="hidden"><br></div>
+        </section>
+
+      </main>
+
+  </body>
+</html>
