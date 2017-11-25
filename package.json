@@ -1,0 +1,23 @@
+{
+  "name": "lyrics",
+  "version": "1.0.0",
+  "description": "_Two player trivia game with multiple choice answers.  Five level options for number of rounds (P1 and P2 turn per round) including default Level 2.  Game database and styling dedicated to [Hamilton: An American Musical](http://www.hamiltonbroadway.com/)._",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwithac/lyrics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwithac/lyrics/issues"
+  },
+  "homepage": "https://github.com/cwithac/lyrics#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
