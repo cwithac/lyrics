@@ -1,5 +1,7 @@
 # Lyrics
 
+https://hamiltonlyrics.herokuapp.com/
+
 _Two player trivia game with multiple choice answers.  Five level options for number of rounds (P1 and P2 turn per round) including default Level 2.  Game database and styling dedicated to [Hamilton: An American Musical](http://www.hamiltonbroadway.com/)._
 
 ## [Lyrics](https://cwithac.github.io/games/lyrics/) + [gitHub Repository](https://github.com/cwithac/cwithac.github.io/tree/master/games/lyrics)
