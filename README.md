@@ -27,9 +27,10 @@ Enter player names and select a level.  Press 'start game' to begin a new game. 
 - Initial layout for better responsive design.  
 - Allow game reset with less restrictions.
 - Allow name input at any time.
-- Star levels reveal rounds at same location.
+- Star levels reveal rounds at same location, star levels are colored already for default
 - Update for more than two players (including constructor functions, single layout format).
 - Color animation of score upon increase.
+- Tie breaker condition
 
 ### Resources:
 
