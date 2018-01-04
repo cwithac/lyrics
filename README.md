@@ -4,15 +4,15 @@
 
 _Two player trivia game with multiple choice answers.  Five level options for number of rounds (P1 and P2 turn per round) including default Level 2.  Game database and styling dedicated to [Hamilton: An American Musical](http://www.hamiltonbroadway.com/)._
 
-## [Lyrics](https://hamiltonlyrics.herokuapp.com/) + [gitHub Repository](https://github.com/cwithac/connectfour)
+[Hosted](https://hamiltonlyrics.herokuapp.com/) + [gitHub Repository](https://github.com/cwithac/connectfour)
 
-![](https://i.imgur.com/FI4cWSH.png)
+![image](https://i.imgur.com/y8Bvtb5.png)
 
 ### Technologies Used:
 ```
 HTML
 CSS
-JavaScript
+JavaScript ES5
 jQuery
 NPM Express
 ```
@@ -27,10 +27,10 @@ Enter player names and select a level.  Press 'start game' to begin a new game. 
 - Initial layout for better responsive design.  
 - Allow game reset with less restrictions.
 - Allow name input at any time.
-- Star levels reveal rounds at same location, star levels are colored already for default
+- Star levels reveal rounds at same location, star levels reset with full hover/mouseleave.
 - Update for more than two players (including constructor functions, single layout format).
 - Color animation of score upon increase.
-- Tie breaker condition
+- Tie breaker condition (extended play).
 
 ### Resources:
 
