@@ -457,6 +457,19 @@ var checkForCorrectP2 = function() {
     //SELECT LEVEL (Level 2 is default)
     //======================================================================//
       //Hover Levels allow for update of content without selection, sets to levelDefault with mouse off.
+
+      var initialStarState = function() {
+        $star1.attr('class', 'starsEnd');
+        $star2.attr('class', 'starsEnd');
+        $star3.removeClass('starsEnd');
+        $star4.removeClass('starsEnd');
+        $star5.removeClass('starsEnd');
+        $star3.attr('class', 'stars');
+        $star4.attr('class', 'stars');
+        $star5.attr('class', 'stars');
+        levelChosen = 12;
+        $turns.text("Total Rounds: " + rounds + " / " + (levelChosen/2));
+      }
       var levelDefault = function() { //Default Level (for mouse off)
         $star1.removeClass('starsEnd');
         $star2.removeClass('starsEnd');
@@ -491,6 +504,8 @@ var checkForCorrectP2 = function() {
       }
       var levelOneHover = function() {
         $star1.attr('class', 'starsEnd');
+        $star2.removeClass('starsEnd');
+        $star2.addClass('stars');
         levelChosen = 6;
         $turns.text("Total Rounds: " + rounds + " / " + (levelChosen/2));
       }
@@ -602,6 +617,7 @@ var checkForCorrectP2 = function() {
         $star5.on('click', levelFive)
         $star5.on('mouseover', levelFiveHover)
         $star5.on('mouseleave', levelDefault)
+        initialStarState();
       }
         starFunctions(); // Turns on starFunctions function
 
